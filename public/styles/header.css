@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Imperial+Script:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #fdf0d1;
+  font-family: "Imperial Script";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+header {
+  background-color: #ac7d88;
+  color: #fdf0d1;
+  padding: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.Home a {
+  text-decoration: none;
+}
+
+.blog-info h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.navigation a {
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #fdf0d1;
+}
