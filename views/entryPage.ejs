@@ -1,0 +1,23 @@
+<%- include("header.ejs") %>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <h1><%= 'Hello,' %></h1>
+    <h2><%= 'Welcome to your very own private blog' %></h2>
+    <h2><%= 'We are delighted to have you here' %></h2>
+    <h2><%= 'To get started, simply enter your name below :' %></h2>
+
+    <form action="/save-name" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
