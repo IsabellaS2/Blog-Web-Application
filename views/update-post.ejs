@@ -1,4 +1,4 @@
-<!-- update-post.ejs -->
+<%- include("header.ejs") %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,25 +6,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Update Post</title>
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/button.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
   </head>
   <body>
-    <h1>Update Post</h1>
+    <h1><%= 'Update Post' %></h1>
 
     <form action="/update-post/<%= post.id %>" method="post">
       <label for="postContent">Post Content:</label>
       <br />
 
-      <textarea
-        id="postContent"
-        name="content"
-        rows="10"
-        cols="50"
-        required
-      ><%= post.content %></textarea>
+      <textarea id="postContent" name="postContent" rows="6" required>
+<%= post.content %></textarea
+      >
       <br />
+
       <button type="submit">Save Changes</button>
+    </form>
+
+    <form action="/confirm-delete/<%= post.id %>" method="get">
+      <button type="submit">Delete Post</button>
     </form>
   </body>
 </html>

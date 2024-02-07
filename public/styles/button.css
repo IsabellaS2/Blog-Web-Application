@@ -18,18 +18,23 @@ input[type="text"]::placeholder {
 
 /* Apply styles to the submit button */
 button {
-  background-color: #ac7d88;
+  background-color: #85586F;
   color: #fdf0d1;
-  width: 200px;
-  padding: 10px 10px; /* Add padding around the text */
+  width: 25%;
+  padding: 10px 10px; 
   border: none;
   border-radius: 10px;
-  cursor: pointer; /* Change the cursor on hover */
+  cursor: pointer; 
   font-family: "Imperial Script";
   font-size: 35px;
 }
 
 /* Style on hover for the button */
 button:hover {
-  background-color: #85586f; /* Darker background color on hover */
+  background-color: #643843; 
+}
+
+form[action^="/update-post"] button,
+form[action^="/confirm-delete"] button {
+  margin: 15px;
 }

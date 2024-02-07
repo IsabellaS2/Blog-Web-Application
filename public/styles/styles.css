@@ -22,6 +22,26 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  color: #85586f;
+  font-family: "Imperial Script";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+  text-align: center;
+}
+
+h4 {
+  color: #fdf0d1;
+  font-family: "Imperial Script";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+  text-align: center;
+}
+
 label {
   color: #643843;
   font-family: "Imperial Script";
@@ -31,9 +51,8 @@ label {
 /* styles.css */
 
 #postContent {
-  background-color: #FDF0D1;
-  border: 2px solid #85586F;
+  background-color: #fdf0d1;
+  border: 2px solid #85586f;
   padding: 10px;
   width: 40%; /* Optional: Adjust the width as needed */
 }
-

@@ -48,6 +48,10 @@ header {
   margin-left: 20px;
 }
 
+.blog-info #titleHomeLink {
+  font-size: 58px;
+}
+
 a {
   text-decoration: none;
   color: #fdf0d1;

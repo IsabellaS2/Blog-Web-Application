@@ -59,8 +59,8 @@ app.post("/create-post", (req, res) => {
   res.redirect("/");
 });
 
-// Page for confirming post deletion
-app.get("/posts/:id/delete", (req, res) => {
+// Show confirmation page before deleting a post
+app.get("/confirm-delete/:id", (req, res) => {
   const postId = parseInt(req.params.id);
   const post = posts.find((p) => p.id === postId);
 
@@ -68,6 +68,7 @@ app.get("/posts/:id/delete", (req, res) => {
     res.status(404).send("Post not found");
     return;
   }
+
   res.render("confirm-delete.ejs", { post });
 });
 
@@ -82,6 +83,8 @@ app.post("/delete-post/:id", (req, res) => {
 
   res.redirect("/");
 });
+
+
 
 // Page for updating a post
 app.get("/posts/:id/update", (req, res) => {
