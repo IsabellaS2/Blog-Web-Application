@@ -1,0 +1,24 @@
+<%- include("header.ejs") %>
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Page</title>
+  </head>
+  <body>
+    <h1>Post Details</h1>
+    <p><strong>ID:</strong> <%= post.id %></p>
+    <p><strong>Content:</strong> <%= post.content %></p>
+
+    <form action="/posts/<%= post.id %>/update" method="get">
+      <button type="submit">Update Post</button>
+    </form>
+
+    <form action="/posts/<%= post.id %>/delete" method="post">
+      <button type="submit">Delete Post</button>
+    </form>
+  </body>
+</html>
