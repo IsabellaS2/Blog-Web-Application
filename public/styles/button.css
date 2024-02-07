@@ -1,0 +1,35 @@
+/* Apply styles to the text input */
+input[type="text"] {
+  background-color: #fdf0d1;
+  width: 30%;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  border: 1px solid #85586f;
+  font-size: 15px;
+}
+
+/* Style the placeholder text */
+input[type="text"]::placeholder {
+   color: #85586F;
+   font-family: "Imperial Script";
+   font-size: 30px;
+ }
+
+/* Apply styles to the submit button */
+button {
+  background-color: #ac7d88;
+  color: #fdf0d1;
+  width: 200px;
+  padding: 10px 10px; /* Add padding around the text */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer; /* Change the cursor on hover */
+  font-family: "Imperial Script";
+  font-size: 35px;
+}
+
+/* Style on hover for the button */
+button:hover {
+  background-color: #85586f; /* Darker background color on hover */
+}

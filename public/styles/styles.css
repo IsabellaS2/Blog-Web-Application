@@ -1,21 +1,39 @@
 body {
-   text-align: center;
+  text-align: center;
 }
 
 h1 {
-   color: #85586F;
-   font-family: "Imperial Script";
-   font-size: 72px;
-   font-style: normal;
-   font-weight: 400;
-   line-height: normal;
+  color: #85586f;
+  font-family: "Imperial Script";
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
 }
 
 h2 {
-   color: #85586F;
-   font-family: "Imperial Script";
-   font-size: 64px;
-   font-style: normal;
-   font-weight: 300;
-   line-height: 25px;
+  color: #85586f;
+  font-family: "Imperial Script";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+  text-align: center;
 }
+
+label {
+  color: #643843;
+  font-family: "Imperial Script";
+  font-size: 53px;
+}
+
+/* styles.css */
+
+#postContent {
+  background-color: #FDF0D1;
+  border: 2px solid #85586F;
+  padding: 10px;
+  width: 40%; /* Optional: Adjust the width as needed */
+}
+

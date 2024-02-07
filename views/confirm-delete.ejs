@@ -1,0 +1,22 @@
+<%- include("header.ejs") %>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirm Delete</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/button.css" />
+  </head>
+  <body>
+    <h1>Confirm Delete</h1>
+
+    <p>Are you sure you want to delete this post?</p>
+
+    <form action="/delete-post/<%= post.id %>" method="post">
+      <button type="submit">Yes, Delete Post</button>
+      <a href="/">No, Go Back</a>
+    </form>
+  </body>
+</html>
