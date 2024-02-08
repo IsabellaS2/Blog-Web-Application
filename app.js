@@ -59,6 +59,18 @@ app.post("/create-post", (req, res) => {
   res.redirect("/");
 });
 
+// Handle post deletion
+app.post("/delete-post/:id", (req, res) => {
+  const postId = parseInt(req.params.id);
+  const index = posts.findIndex((p) => p.id === postId);
+
+  if (index !== -1) {
+    posts.splice(index, 1);
+  }
+
+  res.redirect("/");
+});
+
 // Show confirmation page before deleting a post
 app.get("/confirm-delete/:id", (req, res) => {
   const postId = parseInt(req.params.id);
@@ -70,18 +82,6 @@ app.get("/confirm-delete/:id", (req, res) => {
   }
 
   res.render("confirm-delete.ejs", { post });
-});
-
-// Handle post deletion
-app.post("/delete-post/:id", (req, res) => {
-  const postId = parseInt(req.params.id);
-  const index = posts.findIndex((p) => p.id === postId);
-
-  if (index !== -1) {
-    posts.splice(index, 1);
-  }
-
-  res.redirect("/");
 });
 
 // Page for updating a post
@@ -106,7 +106,8 @@ app.post("/update-post/:id", (req, res) => {
     res.status(404).send("Post not found");
     return;
   }
-  post.content = req.body.postContent;
+
+  post.content = req.body.content;
   res.redirect("/");
 });
 
