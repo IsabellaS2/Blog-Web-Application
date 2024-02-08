@@ -12,19 +12,19 @@
   </head>
   <body>
     <h1>Welcome <%= userName ? userName : '' %>!</h1>
-    <button type="button" onclick="window.location.href='/create-post'">Create A New Post</button>
+    <button type="button" onclick="window.location.href='/create-post'">
+      Create A New Post
+    </button>
 
     <h2>Posts:</h2>
     <div class="post-container">
-      <% if (posts && posts.length > 0) { %>
-        <% posts.forEach((post) => { %>
-          <div class="post-box">
-            <p><%= post.content %></p>
-            <a href="/posts/<%= post.id %>/update">Update Post</a>
-          </div>
-        <% }); %>
-      <% } else { %>
-        <h2>No posts available.</h2>
+      <% if (posts && posts.length > 0) { %> <% posts.forEach((post) => { %>
+      <div class="post-box">
+        <p><%= post.content %></p>
+        <a href="/posts/<%= post.id %>/update">Update Post</a>
+      </div>
+      <% }); %> <% } else { %>
+      <h2>No posts available.</h2>
       <% } %>
     </div>
   </body>

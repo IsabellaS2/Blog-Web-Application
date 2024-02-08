@@ -84,8 +84,6 @@ app.post("/delete-post/:id", (req, res) => {
   res.redirect("/");
 });
 
-
-
 // Page for updating a post
 app.get("/posts/:id/update", (req, res) => {
   const postId = parseInt(req.params.id);
@@ -108,8 +106,7 @@ app.post("/update-post/:id", (req, res) => {
     res.status(404).send("Post not found");
     return;
   }
-
-  post.content = req.body.content;
+  post.content = req.body.postContent;
   res.redirect("/");
 });
 

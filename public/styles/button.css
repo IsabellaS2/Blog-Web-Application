@@ -11,27 +11,27 @@ input[type="text"] {
 
 /* Style the placeholder text */
 input[type="text"]::placeholder {
-   color: #85586F;
-   font-family: "Imperial Script";
-   font-size: 30px;
- }
+  color: #85586f;
+  font-family: "Imperial Script";
+  font-size: 30px;
+}
 
 /* Apply styles to the submit button */
 button {
-  background-color: #85586F;
+  background-color: #85586f;
   color: #fdf0d1;
   width: 25%;
-  padding: 10px 10px; 
+  padding: 10px 10px;
   border: none;
   border-radius: 10px;
-  cursor: pointer; 
+  cursor: pointer;
   font-family: "Imperial Script";
   font-size: 35px;
 }
 
 /* Style on hover for the button */
 button:hover {
-  background-color: #643843; 
+  background-color: #643843;
 }
 
 form[action^="/update-post"] button,

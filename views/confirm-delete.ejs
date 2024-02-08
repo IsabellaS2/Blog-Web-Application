@@ -6,13 +6,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Confirm Delete</title>
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <h1>Confirm Delete</h1>
     <h4>Are you sure you want to delete this post?</h4>
-    <form action="/delete-post/<%= post.id %>" method="post">
-      <button type="submit">Yes, Delete Post</button>
-      <a href="/">No, Go Back</a>
+    <form action="/confirm-delete/<%= post.id %>" method="post">
+      <button type="submit" name="action" value="delete">
+        Yes, Delete Post
+      </button>
+      <button type="submit" name="action" value="goBack">No, Go Back</button>
     </form>
   </body>
 </html>
