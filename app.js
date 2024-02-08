@@ -107,7 +107,7 @@ app.post("/update-post/:id", (req, res) => {
     return;
   }
 
-  post.content = req.body.content;
+  post.content = req.body.postContent;
   res.redirect("/");
 });
 
