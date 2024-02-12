@@ -6,14 +6,14 @@ body {
   background-color: #fdf0d1;
   color: #85586f;
   font-family: "Imperial Script";
-  font-size: 30px;
+  font-size: 35px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
 }
 
 header {
-  background-color: #ac7d88;
+  background-color: #85586f;
   color: #fdf0d1;
   padding: 10px;
 }
